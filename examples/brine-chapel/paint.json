@@ -1,0 +1,9 @@
+{
+ "accent": "vermilion orange (#E4572E)",
+ "strength": 1.2,
+ "rooms": {
+  "3": "a vast underground chapel hewn from rock salt, two rows of thick round salt-crusted pillars, rows of plank pews, a dark doorway in the far wall, drifts of salt on the flagstone floor, lit by a single lantern",
+  "4": "an underground cistern of stone blocks, a square pool of still black brine filling the floor, a narrow plank walkway on trestles crossing the water, an old timber beam pump with an iron barrel on the far bank, lit by a single lantern",
+  "8": "a natural salt cave, clusters of tall angular salt crystals rising from the dirt floor, boulders heaped along the rough rock walls, a smuggler's bedroll and wooden casks, lit by a single lantern"
+ }
+}

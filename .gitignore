@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.blend1
+
+# generated inside a project folder; everything here can be rebuilt from the five source files
+examples/*/build/
+examples/*/renders/
+examples/*/textures/
+examples/*/decals/
+examples/*/out/
+
+# your own projects, if you keep them in the repository folder
+/maps/
+/projects/

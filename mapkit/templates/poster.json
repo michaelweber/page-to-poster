@@ -1,0 +1,22 @@
+{
+ "title": "Example site",
+ "subtitle": "One line of scene-setting",
+ "footer": {"gm": "Referee's map", "player": "Survey map"},
+ "size_in": [36, 24],
+ "palette": {"paper": "#D4DA68", "ink": "#181816", "white": "#F1EFE2", "accent": "#D7262E"},
+ "view": {"azimuth": -45},
+ "cutaway": {"wall": 3.2, "tall": 20},
+ "callouts": [
+  {"feature": "1.crates", "text": "Supply crates"}
+ ],
+ "box": {
+  "gm": {
+   "heading": "Referee's notes",
+   "lines": ["What the referee needs at a glance: an encounter table, hazards, timers."]
+  },
+  "player": {
+   "heading": "What you know",
+   "lines": ["The briefing or rumour the players start with."]
+  }
+ }
+}

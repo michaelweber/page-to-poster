@@ -1,0 +1,20 @@
+{
+ "name": "Example site",
+ "units": "meters",
+ "source": "where this layout came from: page and map, or your own reading of the text",
+ "corridor_width": 3.2,
+ "corridor_height": 3.6,
+ "floor": "concrete_floor",
+ "wall": "concrete_wall",
+ "junctions": {},
+ "rooms": [
+  {"id": 1, "name": "Entry Hall", "min": [0, 0], "max": [12, 9], "height": 5},
+  {"id": 2, "name": "Store Room", "min": [20, 1.5], "max": [28, 7.5], "height": 4}
+ ],
+ "links": [
+  {"kind": "open", "a": 1, "b": 2, "path": [[12, 4.5], [20, 4.5]]}
+ ],
+ "entrances": [
+  {"room": 1, "kind": "stairs", "side": "S", "at": 6, "label": "Stairs up"}
+ ]
+}

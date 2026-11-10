@@ -1,0 +1,55 @@
+{
+ "title": "The Brine Chapel",
+ "subtitle": "Harrow Deep salt workings, chapel level",
+ "footer": {
+  "gm": "Referee's map. The example adventure of page-to-poster.",
+  "player": "Company survey, sixty years out of date"
+ },
+ "size_in": [36, 24],
+ "palette": {"paper": "#A9CFC6", "ink": "#16201F", "white": "#F4F2E6", "accent": "#E4572E"},
+ "view": {"azimuth": -45},
+ "cutaway": {"wall": 3.2, "tall": 20, "props": {"3": 4.5}},
+ "room_labels": {"5": {"gm": "Ossuary", "player": ""}},
+ "art_box": [0.015, 0.015, 0.985, 0.985],
+ "legend_labels": {"vent": "DRAIN (CRAWLABLE)"},
+ "callouts": [
+  {"feature": "1.winding_gear", "text": "Winding gear, rusted solid"},
+  {"feature": "1.lamp_oil", "text": "Lamp oil: 4 good flasks"},
+  {"feature": "2.ledger", "text": "Ledger: 11 names \"given to the Saint\"", "gm_only": true},
+  {"feature": "J1.signpost", "text": "Signpost"},
+  {"feature": "3.pews", "text": "Miners' pews"},
+  {"feature": "3.braziers", "text": "Braziers, lit and tended"},
+  {"feature": "3.saint", "text": "The Salt Saint"},
+  {"feature": "3.secret_slab", "text": "Pivoting slab: the smoke leans toward it", "gm_only": true},
+  {"feature": "4.pump", "text": "Beam pump: 1 hour halves the pool"},
+  {"feature": "4.pool", "text": "Brine, 3 m deep. Odile's offerings lie on the bottom", "gm_only": true},
+  {"feature": "5.bed", "text": "Odile's bed", "gm_only": true},
+  {"feature": "5.chest", "text": "Chapel plate + winch keys", "gm_only": true},
+  {"feature": "6.crawls", "text": "Two crawls meet here"},
+  {"feature": "7.barred_door", "text": "Barred on this side"},
+  {"feature": "7.winch", "text": "Hand winch"},
+  {"feature": "8.crystals", "text": "Salt crystals, arm-long"},
+  {"feature": "8.cache", "text": "Smugglers' cache", "gm_only": true}
+ ],
+ "box": {
+  "gm": {
+   "heading": "While they explore: d6 every half hour",
+   "width": 1700,
+   "lines": [
+    "1  A lantern crosses the far end of the passage: Odile, checking her braziers.",
+    "2  The brine breathes. Every pool rises a hand's width, sighs, and falls.",
+    "3  A smuggler, on the way to the cache (2 in 6: all three).",
+    "4  Salt-blind rats, a dozen, drawn to lamp oil.",
+    "5  The braziers gutter. Odile comes to relight them within ten minutes.",
+    "6  Three slow knocks from below, in the winch shaft."
+   ]
+  },
+  "player": {
+   "heading": "What the shepherd saw",
+   "lines": [
+    "The head-house door stood open. There was fresh candle wax on the stair.",
+    "The chapel has been shut for sixty years, since the brine came up."
+   ]
+  }
+ }
+}

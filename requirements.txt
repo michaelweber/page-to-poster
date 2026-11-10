@@ -1,0 +1,5 @@
+numpy
+scipy
+pillow
+# only needed to unpack PDF adventures (`p2p.py new --source book.pdf`)
+pymupdf

@@ -1,0 +1,63 @@
+{
+ "title": "Kestrel-9",
+ "subtitle": "Signal relay station, ice moon Tolla",
+ "footer": {
+  "gm": "Referee's map. After the relief pilot's sketch; sizes estimated where the text gives none.",
+  "player": "Company file copy: Kestrel-9 relay, Tolla"
+ },
+ "size_in": [24, 18],
+ "palette": {"paper": "#A3BED0", "ink": "#121922", "white": "#F2F5F4", "accent": "#D7262E"},
+ "view": {"azimuth": -45},
+ "cutaway": {"wall": 1.6, "tall": 20},
+ "number_rooms": true,
+ "label_scale": 1.3,
+ "exposure": 1.15,
+ "room_label_offsets": {"1": [3.5, -1.5], "2": [0, -5.2], "4": [-0.5, -4.5], "6": [3, -2.5], "7": [5.5, -2.5]},
+ "legend_labels": {"vent": "DUCT (CRAWLABLE)", "secret": "SECRET HATCH"},
+ "callouts": [
+  {"feature": "1.outer_door", "text": "Outer door, iced a hand's width open"},
+  {"feature": "1.lockers", "text": "Six suit lockers, two empty"},
+  {"feature": "1.prints", "text": "Boot prints in the frost lead north"},
+  {"feature": "2.meals", "text": "Four meals, left half eaten"},
+  {"feature": "2.screen", "text": "Wall screen: the pulse as a green line"},
+  {"feature": "2.galley", "text": "Galley counter"},
+  {"feature": "3.stripped", "text": "One bunk stripped bare"},
+  {"feature": "3.lockers", "text": "Six lockers"},
+  {"feature": "4.log", "text": "Consoles and relay log: the job"},
+  {"feature": "4.breaker", "text": "Master breaker: stops the pulse, brings Rask", "gm_only": true},
+  {"feature": "4.hatch", "text": "Hatch behind the rack: crawl to 7", "gm_only": true},
+  {"feature": "5.generators", "text": "Two generators, running"},
+  {"feature": "5.tank", "text": "Fuel tank on its cradle"},
+  {"feature": "5.drums", "text": "Fuel drums"},
+  {"feature": "5.catwalk", "text": "Catwalk"},
+  {"feature": "5.duct", "text": "Cable duct to the lab: a tight crawl"},
+  {"feature": "6.rig", "text": "Drill rig"},
+  {"feature": "6.pit", "text": "Drill pit, 3 m across, 8 m deep"},
+  {"feature": "6.maro", "text": "Dr. Maro, frozen in; black glass floor pulses", "gm_only": true},
+  {"feature": "6.cores", "text": "Ice core racks"},
+  {"feature": "7.nest", "text": "Bedding, ration tins, dead heater"}
+ ],
+ "box": {
+  "gm": {
+   "heading": "If they stay too long: d6 every 20 minutes",
+   "lines": [
+    "1-2  The pulse quickens. Everyone hears it in their teeth.",
+    "3  Lights fail in one area for ten minutes.",
+    "4  Rask watches from a doorway and withdraws.",
+    "5  Frost creeps: one door ices shut (strength test to force).",
+    "6  The pit answers the mast: everything loose in 6 slides a hand's width toward it.",
+    "Truth: Maro drilled into something that pulses and is dead in the pit. Rask repeats the pulse from the mast, lives in 7 and will not let it be shut down."
+   ]
+  },
+  "player": {
+   "heading": "Company briefing",
+   "lines": [
+    "Kestrel-9: crewed signal relay. Six crew, a mast, a drill.",
+    "Eleven weeks ago its carrier changed to a slow, even pulse.",
+    "No hail has been answered since.",
+    "Recover the relay log. Explain the pulse if you can.",
+    "The surface door into the airlock is the way in."
+   ]
+  }
+ }
+}

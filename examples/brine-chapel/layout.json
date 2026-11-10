@@ -1,0 +1,41 @@
+{
+ "name": "The Brine Chapel",
+ "units": "meters",
+ "source": "source/adventure.md. The text has no map: sizes come from the room key (one pace taken as one meter), positions from its 'east of', 'south of' and 'north wall' phrases.",
+ "corridor_width": 2.8,
+ "corridor_height": 3.2,
+ "vent_width": 0.9,
+ "vent_z": 0.6,
+ "floor": "stone_floor",
+ "wall": "stone_wall",
+ "corridor_decals": ["crack", "puddle", "crack"],
+ "junctions": {"J1": [6, -6]},
+ "rooms": [
+  {"id": 1, "name": "Head House", "min": [0, 0], "max": [12, 10], "height": 5},
+  {"id": 2, "name": "Tally Room", "min": [0, 16], "max": [8, 23], "height": 3.2},
+  {"id": 3, "name": "Nave", "min": [20, -2], "max": [44, 16], "height": 8},
+  {"id": 4, "name": "Brine Sump", "min": [52, -2], "max": [66, 12], "height": 5},
+  {"id": 5, "name": "Ossuary", "min": [26, 22], "max": [38, 30], "height": 3.2},
+  {"id": 6, "name": "Collapsed Gallery", "min": [22, -24], "max": [42, -12], "height": 3.6, "wall": "rock"},
+  {"id": 7, "name": "Lower Winch", "min": [52, -24], "max": [62, -14], "height": 5},
+  {"id": 8, "name": "Crystal Grotto", "min": [0, -26], "max": [14, -12], "height": 4.5, "floor": "dirt", "wall": "rock"}
+ ],
+ "links": [
+  {"kind": "open", "a": 1, "b": 2, "path": [[4, 10], [4, 16]], "doors": ["b"]},
+  {"kind": "open", "a": 1, "b": 3, "path": [[12, 5], [20, 5]]},
+  {"kind": "open", "a": 3, "b": 4, "path": [[44, 5], [52, 5]]},
+  {"kind": "open", "a": 3, "b": 5, "path": [[32, 16], [32, 22]], "doors": ["a"], "secret": true},
+  {"kind": "open", "a": 3, "b": 6, "path": [[32, -2], [32, -12]]},
+  {"kind": "open", "a": 1, "b": "J1", "path": [[6, 0], [6, -6]]},
+  {"kind": "open", "a": "J1", "b": 8, "path": [[6, -6], [6, -12]]},
+  {"kind": "open", "a": "J1", "b": 6, "path": [[6, -6], [26, -6], [26, -12]]},
+  {"kind": "open", "a": 4, "b": 7, "path": [[58, -2], [58, -14]], "doors": ["b"], "closed": true},
+  {"kind": "blocked", "a": 6, "b": 7, "path": [[42, -18], [52, -18]]},
+  {"kind": "vent", "a": 4, "b": 5, "path": [[59, 12], [59, 24], [38, 24]]}
+ ],
+ "entrances": [
+  {"room": 1, "kind": "stairs", "side": "W", "at": 5, "label": "Stair to the surface"},
+  {"room": 7, "kind": "shaft", "at": [57, -19], "dir": "down", "depth": 8, "label": "Shaft to the drowned workings"},
+  {"room": 8, "kind": "tunnel", "side": "W", "at": -19, "rough": true, "length": 9, "label": "Smugglers' adit"}
+ ]
+}

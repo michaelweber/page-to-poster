@@ -1,0 +1,37 @@
+{
+ "name": "Kestrel-9",
+ "units": "meters",
+ "source": "kestrel-9.pdf: positions from the relief pilot's sketch (p3, not to scale); sizes from the area key (p2) where given, else estimated (see brief.md).",
+ "corridor_width": 2.5,
+ "corridor_height": 2.8,
+ "floor": "painted_metal",
+ "wall": "corrugated",
+ "door_width": 1.4,
+ "corridor_decals": ["footprints", "crack"],
+ "junctions": {"J1": [5, 13]},
+ "rooms": [
+  {"id": 1, "name": "Airlock", "min": [2, -8], "max": [8, -4], "height": 2.8},
+  {"id": 2, "name": "Common Room", "min": [0, 0], "max": [10, 8], "height": 2.8},
+  {"id": 3, "name": "Bunks", "min": [-11, 1], "max": [-5, 7], "height": 2.8},
+  {"id": 4, "name": "Control", "min": [15, 1.5], "max": [20, 6.5], "height": 2.8},
+  {"id": 5, "name": "Generator Hall", "min": [-4, 18], "max": [14, 30], "height": 6},
+  {"id": 6, "name": "Ice Lab", "min": [17, 22], "max": [27, 32], "height": 3},
+  {"id": 7, "name": "Antenna Shaft", "min": [20.6, 2], "max": [24.6, 6], "height": 8}
+ ],
+ "links": [
+  {"kind": "open", "a": 1, "b": 2, "path": [[5, -4], [5, 0]], "doors": ["a", "b"]},
+  {"kind": "open", "a": 2, "b": 3, "path": [[0, 4], [-5, 4]], "doors": ["a"]},
+  {"kind": "open", "a": 2, "b": 4, "path": [[10, 4], [15, 4]], "doors": ["a"]},
+  {"kind": "open", "a": 2, "b": "J1", "path": [[5, 8], [5, 13]], "doors": ["a"]},
+  {"kind": "open", "a": "J1", "b": 5, "path": [[5, 13], [5, 18]]},
+  {"kind": "open", "a": "J1", "b": 6, "path": [[5, 13], [22, 13], [22, 22]]},
+  {"kind": "vent", "a": 4, "b": 7, "path": [[20, 4], [20.6, 4]], "secret": true},
+  {"kind": "vent", "a": 5, "b": 6, "path": [[14, 28], [17, 28]]}
+ ],
+ "entrances": [
+  {"room": 1, "kind": "door", "side": "S", "at": 5, "ajar": 8, "label": "Outer door (surface)"},
+  {"room": 5, "kind": "ramp", "side": "N", "at": 5, "sealed": true, "label": "Garage ramp: sealed"},
+  {"room": 6, "kind": "tunnel", "side": "N", "at": 24, "rough": true, "length": 8, "label": "Old tunnel: iced up"},
+  {"room": 7, "kind": "shaft", "at": [23.4, 4.6], "radius": 0.9, "dir": "up", "daylight": true, "label": "Mast: open to the sky"}
+ ]
+}

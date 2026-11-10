@@ -1,0 +1,29 @@
+{
+ "name": "Prop zoo",
+ "units": "meters",
+ "source": "not an adventure: one of every prop, entrance and link kind, as a test and a visual reference",
+ "corridor_width": 3.2,
+ "corridor_height": 3.6,
+ "rooms": [
+  {"id": 1, "name": "Prop Hall", "min": [0, 0], "max": [44, 28], "height": 6},
+  {"id": 2, "name": "Cave Fill", "min": [52, 4], "max": [72, 24], "height": 4, "floor": "dirt", "wall": "rock"},
+  {"id": 3, "name": "Annex", "min": [0, 36], "max": [16, 48], "height": 4, "floor": "tile"},
+  {"id": 4, "name": "Vault", "min": [28, 36], "max": [40, 48], "height": 4, "floor": "stone_floor", "wall": "stone_wall"}
+ ],
+ "links": [
+  {"kind": "open", "a": 1, "b": 2, "path": [[44, 14], [52, 14]]},
+  {"kind": "open", "a": 1, "b": 3, "path": [[8, 28], [8, 36]], "doors": ["b"]},
+  {"kind": "open", "a": 1, "b": 4, "path": [[34, 28], [34, 36]], "doors": ["b"], "secret": true},
+  {"kind": "blocked", "a": 3, "b": 4, "path": [[16, 42], [28, 42]]},
+  {"kind": "vent", "a": 1, "b": 4, "path": [[38, 28], [38, 36]]}
+ ],
+ "entrances": [
+  {"room": 1, "kind": "stairs", "side": "S", "at": 6, "label": "Stairs up"},
+  {"room": 1, "kind": "stairs", "side": "S", "at": 16, "dir": "down", "label": "Stairs down"},
+  {"room": 1, "kind": "door", "side": "S", "at": 30, "label": "Door"},
+  {"room": 1, "kind": "ramp", "side": "W", "at": 14, "length": 8, "rise": 2.4, "label": "Ramp up"},
+  {"room": 2, "kind": "tunnel", "side": "E", "at": 14, "rough": true, "label": "Rough tunnel"},
+  {"room": 1, "kind": "shaft", "at": [41, 4], "label": "Shaft up"},
+  {"room": 1, "kind": "shaft", "at": [41, 10], "dir": "down", "label": "Shaft down"}
+ ]
+}
