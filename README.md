@@ -42,7 +42,7 @@ The optional ComfyUI models and nodes: [docs/comfyui.md](docs/comfyui.md).
 ## Try it
 
 ```
-git clone <this repository's URL> page-to-poster
+git clone https://github.com/michaelweber/page-to-poster
 cd page-to-poster
 pip install -r requirements.txt
 python p2p.py doctor                        # must end with "Core pipeline: ready"
@@ -59,7 +59,7 @@ The repository root is the skill folder (it holds `SKILL.md`). Put it where your
 example:
 
 ```
-git clone <this repository's URL> ~/.claude/skills/page-to-poster
+git clone https://github.com/michaelweber/page-to-poster ~/.claude/skills/page-to-poster
 ```
 
 Then ask for a map:
